@@ -7,18 +7,18 @@ int main()
     while (T--)
     {
         int N, X, Y;
-        long long int maxEarnings;
+        long long int max_earnings;
         cin >> N >> X >> Y;
         if (Y > 2 * X)
         {
-            maxEarnings = (N / 2) * Y + (N % 2) * X;
+            max_earnings = (N / 2) * Y + (N % 2) * X;
         }
         else
         {
-            maxEarnings = N * X;
+            max_earnings = N * X;
         }
         
-        cout << maxEarnings << endl;
+        cout << max_earnings << endl;
     }
     return 0;
 }   
